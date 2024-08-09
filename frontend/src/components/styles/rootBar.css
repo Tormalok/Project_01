@@ -7,12 +7,15 @@
 }
 
 :root {
+  --root-bar-height: 37px;
+}
+
+.root-bar {
   --bg-color-default: #24292f;
   --font-default: 'Roboto Mono', monospace;
   --font-color-default: #ffffff;
   --font-size-default: 14px;
   --bar-width-default: 100%;
-  --bar-height-default: 37px;
 }
 
 .root-bar {
@@ -26,7 +29,7 @@
   font-style: normal;
   font-size: var(--font-size-default);
   width: var(--bar-width-default);
-  height: var(--bar-height-default);
+  height: var(--root-bar-height);
   display: flex;
   align-items: center;
   justify-content: center;
