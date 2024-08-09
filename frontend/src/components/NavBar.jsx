@@ -5,6 +5,7 @@ import {
   faChevronDown,
   faChevronUp,
   faUser,
+  faShoppingCart,
 } from '@fortawesome/free-solid-svg-icons';
 import './styles/navBar.css';
 
@@ -23,25 +24,23 @@ const NavBar = () => {
         <ul className='nav-link-container'>
           <li className='nav-link'>
             <FontAwesomeIcon icon={faUser} className='user-icon' />
-            <p>item 1</p>
+            <p>Sign in</p>
+          </li>
+          <li className='nav-link'>
+            <p>Categories</p>
             <FontAwesomeIcon icon={faChevronDown} className='chevron-icon' />
           </li>
           <li className='nav-link'>
-            <p>item 1</p>
+            <p>Deals</p>
             <FontAwesomeIcon icon={faChevronDown} className='chevron-icon' />
           </li>
           <li className='nav-link'>
-            <p>item 1</p>
+            <p>Orders</p>
             <FontAwesomeIcon icon={faChevronDown} className='chevron-icon' />
           </li>
-          <li className='nav-link'>
-            <p>item 1</p>
-            <FontAwesomeIcon icon={faChevronDown} className='chevron-icon' />
-          </li>
-          <li className='nav-link'>
-            <p>item 1</p>
-            <FontAwesomeIcon icon={faChevronDown} className='chevron-icon' />
-          </li>
+          <div className='cart-icon-container'>
+            <FontAwesomeIcon icon={faShoppingCart} className='cart-icon' />
+          </div>
         </ul>
       </div>
     </div>
