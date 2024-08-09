@@ -6,7 +6,7 @@
   --font-color-light: #99a1b3;
   --border-color: #e7ebf0;
   --padding-main-hz: 30px;
-  --bar-height: 40px;
+  --nav-bar-height: 40px;
 }
 
 .nav-bar-container {
@@ -36,7 +36,7 @@
   width: 550px;
   display: flex;
   align-items: center;
-  height: var(--bar-height);
+  height: var(--nav-bar-height);
   padding-left: 20px;
   background-color: #f7f7f7;
   border-radius: 20px;
@@ -84,7 +84,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: var(--bar-height);
+  height: var(--nav-bar-height);
   width: auto;
   list-style: none;
   /* border: 1px #4a4a4a solid; */
@@ -94,7 +94,7 @@
   margin-left: 5px;
   color: #4a4a4a;
 
-  height: var(--bar-height);
+  height: var(--nav-bar-height);
   width: auto;
   display: flex;
   align-items: center;
@@ -102,6 +102,7 @@
   padding-right: 20px;
   border-radius: 20px;
   /* background-color: #e0e0e0; */
+  position: relative;
 }
 
 .nav-link-container .nav-link:hover {
@@ -129,7 +130,7 @@
 }
 
 .nav-bar-container .cart-icon-container {
-  height: var(--bar-height);
+  height: var(--nav-bar-height);
   width: 40px;
   display: flex;
   align-items: center;
@@ -146,4 +147,37 @@
 
 .nav-bar-container .cart-icon-container .cart-icon {
   color: #4a4a4a;
+}
+
+/* Dropdown Menu Styles */
+.categories-dropdown-menu {
+  position: absolute;
+  top: 103px; /* Adjust to match the height of your navbar */
+  left: 60%;
+  width: 400px;
+  background-color: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+}
+
+.categories-dropdown-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.categories-dropdown-menu ul li {
+  padding: 10px;
+  font-size: 16px;
+  color: #1f2328;
+  cursor: pointer;
+}
+
+.categories-dropdown-menu ul li:hover {
+  background-color: #f7f7f7;
+  text-decoration: underline;
 }
