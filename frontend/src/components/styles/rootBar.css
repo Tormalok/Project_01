@@ -42,5 +42,5 @@
 
 .root-bar a:hover {
   text-decoration: underline;
-  color: var(--font-color-default);
+  color: #ffc40c;
 }
