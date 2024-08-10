@@ -1,8 +1,9 @@
 import React from 'react';
-import RootBar from '../components/RootBar';
-import NavBar from '../components/NavBar';
-import Banner from '../components/Banner';
-import CategoriesBox from '../components/CategoriesBox';
+import RootBar from '../components/Globals/RootBar';
+import NavBar from '../components/Globals/NavBar';
+import Banner from '../components/Home_Sections/Banner';
+import CategoriesBox from '../components/Home_Sections/CategoriesBox';
+import IntroBox from '../components/Home_Sections/IntroBox';
 import './styles/home.css';
 
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
       <RootBar />
       <NavBar />
       <div className='home-container-inner'>
-        <div className='section-one'></div>
+        <IntroBox />
         <CategoriesBox />
         <Banner />
       </div>

@@ -87,7 +87,6 @@ const NavBar = () => {
           </div>
         </ul>
 
-        {/* Dropdown Menus */}
         {openDropdown === 'categories' && (
           <div className='categories-dropdown-menu' ref={dropdownRef}>
             <ul>
