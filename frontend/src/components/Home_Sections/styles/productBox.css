@@ -4,7 +4,7 @@
   width: 100%;
   position: relative;
   padding: 10px;
-  background-color: #b4e1cc; /* Light green background */
+  background-color: #b4e1cc;
 }
 
 .scroll-button {
@@ -48,7 +48,7 @@
 .scroll-item {
   min-width: 200px;
   height: 300px;
-  background-color: #e0f7ef; /* Lighter shade of green */
+  background-color: #e0f7ef;
   margin-right: 20px;
   flex-shrink: 0;
   display: flex;
@@ -59,33 +59,35 @@
   border-radius: 10px;
   box-sizing: border-box;
   overflow: hidden;
-  border: 1px solid #b4e1cc; /* Slight border for distinction */
+  border: 1px solid #b4e1cc;
 }
 
 .image-box {
-  background-color: #98d6bb; /* Darker green for the image area */
+  background-color: #98d6bb;
   width: 100%;
   height: 70%;
-  border-bottom: 1px solid #b4e1cc; /* Border between image and info sections */
+  border-bottom: 1px solid #b4e1cc;
 }
 
 .info-box {
-  background-color: #e0f7ef; /* Lighter green for the info area */
+  background-color: #e0f7ef;
   width: 100%;
   height: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: 'Helvetica', sans-serif;
 }
 
-.product-name,
-.product-price {
+.product-name {
   margin: 5px 0;
   font-size: 14px;
 }
 
 .product-price {
-  color: #ff0000; /* Red color for the price */
+  margin: 5px 0;
+  color: #ff0000;
   font-weight: bold;
+  font-size: 30px;
 }
