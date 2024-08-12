@@ -21,20 +21,17 @@
   flex-direction: column;
   justify-content: flex-start;
   border-top-right-radius: 10px;
+  overflow: hidden;
 }
 
 .section-two .box .box-inner-top {
   background-color: #ffd001;
   height: 60%;
   width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 .section-two .box .box-inner-bottom {
   background-color: #efc1e3;
   height: 40%;
   width: 100%;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
