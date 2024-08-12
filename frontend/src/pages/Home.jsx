@@ -4,7 +4,8 @@ import NavBar from '../components/Globals/NavBar';
 import Banner from '../components/Home_Sections/Banner';
 import CategoriesBox from '../components/Home_Sections/CategoriesBox';
 import IntroBox from '../components/Home_Sections/IntroBox';
-import ProductBox from '../components/Home_Sections/ProductBox';
+import ProductBox_1 from '../components/Home_Sections/ProductBox_1';
+import ProductBox_2 from '../components/Home_Sections/ProductBox_1';
 import './styles/home.css';
 
 const Home = () => {
@@ -16,7 +17,8 @@ const Home = () => {
         <IntroBox />
         <CategoriesBox />
         <Banner />
-        <ProductBox title='Featured Products' />
+        <ProductBox_1 title='Featured Products' />
+        <ProductBox_2 title='New Arrivals' />
       </div>
     </div>
   );

@@ -5,6 +5,7 @@
   width: 100%;
   position: relative;
   padding: 10px;
+  margin-bottom: 50px;
   background-color: #b4e1cc;
   box-sizing: border-box;
 }
@@ -98,7 +99,7 @@
 }
 
 .product-price {
-  color: #ff0000;
+  color: #cc0000;
   font-weight: 700;
   font-family: 'Helvetica', sans-serif;
   display: inline-flex;
