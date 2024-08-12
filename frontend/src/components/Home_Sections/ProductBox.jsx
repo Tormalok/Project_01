@@ -33,63 +33,107 @@ const ProductBox = ({ title }) => {
           <div className='image-box'></div>
           <div className='info-box'>
             <div className='product-name'>Product 1</div>
-            <div className='product-price'>$99.99</div>
+            <div className='product-price'>
+              <span className='price-dollar-sign'>$</span>
+              <span className='price-dollars'>99</span>
+              <span className='price-cents'>.99</span>
+            </div>
           </div>
         </div>
+
         <div className='scroll-item'>
           <div className='image-box'></div>
           <div className='info-box'>
             <div className='product-name'>Product 2</div>
-            <div className='product-price'>$149.99</div>
+            <div className='product-price'>
+              <span className='price-dollar-sign'>$</span>
+              <span className='price-dollars'>149</span>
+              <span className='price-cents'>.99</span>
+            </div>
           </div>
         </div>
+
         <div className='scroll-item'>
           <div className='image-box'></div>
           <div className='info-box'>
             <div className='product-name'>Product 3</div>
-            <div className='product-price'>$199.99</div>
+            <div className='product-price'>
+              <span className='price-dollar-sign'>$</span>
+              <span className='price-dollars'>199</span>
+              <span className='price-cents'>.99</span>
+            </div>
           </div>
         </div>
+
         <div className='scroll-item'>
           <div className='image-box'></div>
           <div className='info-box'>
             <div className='product-name'>Product 4</div>
-            <div className='product-price'>$79.99</div>
+            <div className='product-price'>
+              <span className='price-dollar-sign'>$</span>
+              <span className='price-dollars'>79</span>
+              <span className='price-cents'>.99</span>
+            </div>
           </div>
         </div>
+
         <div className='scroll-item'>
           <div className='image-box'></div>
           <div className='info-box'>
             <div className='product-name'>Product 5</div>
-            <div className='product-price'>$69.99</div>
+            <div className='product-price'>
+              <span className='price-dollar-sign'>$</span>
+              <span className='price-dollars'>69</span>
+              <span className='price-cents'>.99</span>
+            </div>
           </div>
         </div>
+
         <div className='scroll-item'>
           <div className='image-box'></div>
           <div className='info-box'>
             <div className='product-name'>Product 6</div>
-            <div className='product-price'>$29.99</div>
+            <div className='product-price'>
+              <span className='price-dollar-sign'>$</span>
+              <span className='price-dollars'>29</span>
+              <span className='price-cents'>.99</span>
+            </div>
           </div>
         </div>
+
         <div className='scroll-item'>
           <div className='image-box'></div>
           <div className='info-box'>
             <div className='product-name'>Product 7</div>
-            <div className='product-price'>$49.99</div>
+            <div className='product-price'>
+              <span className='price-dollar-sign'>$</span>
+              <span className='price-dollars'>49</span>
+              <span className='price-cents'>.99</span>
+            </div>
           </div>
         </div>
+
         <div className='scroll-item'>
           <div className='image-box'></div>
           <div className='info-box'>
             <div className='product-name'>Product 8</div>
-            <div className='product-price'>$97.99</div>
+            <div className='product-price'>
+              <span className='price-dollar-sign'>$</span>
+              <span className='price-dollars'>97</span>
+              <span className='price-cents'>.99</span>
+            </div>
           </div>
         </div>
+
         <div className='scroll-item'>
           <div className='image-box'></div>
           <div className='info-box'>
             <div className='product-name'>Product 9</div>
-            <div className='product-price'>$89.99</div>
+            <div className='product-price'>
+              <span className='price-dollar-sign'>$</span>
+              <span className='price-dollars'>89</span>
+              <span className='price-cents'>.99</span>
+            </div>
           </div>
         </div>
       </div>

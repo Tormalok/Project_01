@@ -98,8 +98,24 @@
 }
 
 .product-price {
-  margin: 5px 0;
   color: #ff0000;
-  font-weight: bold;
+  font-weight: 700;
+  font-family: 'Helvetica', sans-serif;
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.price-dollar-sign {
   font-size: 30px;
+  margin-right: 5px;
+}
+
+.price-dollars {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.price-cents {
+  font-size: 20px;
+  vertical-align: top;
 }
