@@ -1,10 +1,24 @@
 .scroll-container-wrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
   width: 100%;
   position: relative;
   padding: 10px;
   background-color: #b4e1cc;
+  box-sizing: border-box;
+}
+
+.scroll-container-wrapper.with-title {
+  padding-top: 40px;
+}
+
+.scroll-title {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .scroll-button {
@@ -20,10 +34,8 @@
   cursor: pointer;
   position: absolute;
   z-index: 2;
-}
-
-.scroll-button:hover {
-  background-color: #f0f0f0;
+  top: calc(50% + 20px);
+  /* top: 50%; */
 }
 
 .scroll-button.left {
@@ -39,6 +51,7 @@
   overflow-x: auto;
   scroll-behavior: smooth;
   padding: 10px 35px;
+  width: 100%;
 }
 
 .scroll-container::-webkit-scrollbar {

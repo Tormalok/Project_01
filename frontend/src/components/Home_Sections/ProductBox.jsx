@@ -6,7 +6,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import './styles/productBox.css';
 
-const ProductBox = () => {
+const ProductBox = ({ title }) => {
   const scrollContainerRef = useRef(null);
 
   const scroll = (direction) => {
@@ -18,7 +18,8 @@ const ProductBox = () => {
   };
 
   return (
-    <div className='scroll-container-wrapper'>
+    <div className={`scroll-container-wrapper ${title ? 'with-title' : ''}`}>
+      {title && <h2 className='scroll-title'>{title}</h2>}
       <button className='scroll-button left' onClick={() => scroll('left')}>
         <FontAwesomeIcon className='scroll-button-icon' icon={faChevronLeft} />
       </button>
@@ -26,43 +27,64 @@ const ProductBox = () => {
         <div className='scroll-item'>
           <div className='image-box'></div>
           <div className='info-box'>
-            <p className='product-name'>Product Name</p>
-            <p className='product-price'>$99.99</p>
+            <div className='product-name'>Product 1</div>
+            <div className='product-price'>$99.99</div>
           </div>
         </div>
         <div className='scroll-item'>
           <div className='image-box'></div>
           <div className='info-box'>
-            <p className='product-name'>Product Name</p>
-            <p className='product-price'>$99.99</p>
+            <div className='product-name'>Product 2</div>
+            <div className='product-price'>$149.99</div>
           </div>
         </div>
         <div className='scroll-item'>
           <div className='image-box'></div>
           <div className='info-box'>
-            <p className='product-name'>Product Name</p>
-            <p className='product-price'>$99.99</p>
+            <div className='product-name'>Product 3</div>
+            <div className='product-price'>$199.99</div>
           </div>
         </div>
         <div className='scroll-item'>
           <div className='image-box'></div>
           <div className='info-box'>
-            <p className='product-name'>Product Name</p>
-            <p className='product-price'>$99.99</p>
+            <div className='product-name'>Product 4</div>
+            <div className='product-price'>$79.99</div>
           </div>
         </div>
         <div className='scroll-item'>
           <div className='image-box'></div>
           <div className='info-box'>
-            <p className='product-name'>Product Name</p>
-            <p className='product-price'>$99.99</p>
+            <div className='product-name'>Product 5</div>
+            <div className='product-price'>$69.99</div>
           </div>
         </div>
         <div className='scroll-item'>
           <div className='image-box'></div>
           <div className='info-box'>
-            <p className='product-name'>Product Name</p>
-            <p className='product-price'>$99.99</p>
+            <div className='product-name'>Product 6</div>
+            <div className='product-price'>$29.99</div>
+          </div>
+        </div>
+        <div className='scroll-item'>
+          <div className='image-box'></div>
+          <div className='info-box'>
+            <div className='product-name'>Product 7</div>
+            <div className='product-price'>$49.99</div>
+          </div>
+        </div>
+        <div className='scroll-item'>
+          <div className='image-box'></div>
+          <div className='info-box'>
+            <div className='product-name'>Product 8</div>
+            <div className='product-price'>$97.99</div>
+          </div>
+        </div>
+        <div className='scroll-item'>
+          <div className='image-box'></div>
+          <div className='info-box'>
+            <div className='product-name'>Product 9</div>
+            <div className='product-price'>$89.99</div>
           </div>
         </div>
       </div>

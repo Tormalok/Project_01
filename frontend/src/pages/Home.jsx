@@ -16,7 +16,7 @@ const Home = () => {
         <IntroBox />
         <CategoriesBox />
         <Banner />
-        <ProductBox />
+        <ProductBox title='Featured Products' />
       </div>
     </div>
   );
