@@ -23,12 +23,48 @@ const ProductBox = () => {
         <FontAwesomeIcon className='scroll-button-icon' icon={faChevronLeft} />
       </button>
       <div className='scroll-container' ref={scrollContainerRef}>
-        <div className='scroll-item'>1</div>
-        <div className='scroll-item'>2</div>
-        <div className='scroll-item'>3</div>
-        <div className='scroll-item'>4</div>
-        <div className='scroll-item'>5</div>
-        <div className='scroll-item'>6</div>
+        <div className='scroll-item'>
+          <div className='image-box'></div>
+          <div className='info-box'>
+            <p className='product-name'>Product Name</p>
+            <p className='product-price'>$99.99</p>
+          </div>
+        </div>
+        <div className='scroll-item'>
+          <div className='image-box'></div>
+          <div className='info-box'>
+            <p className='product-name'>Product Name</p>
+            <p className='product-price'>$99.99</p>
+          </div>
+        </div>
+        <div className='scroll-item'>
+          <div className='image-box'></div>
+          <div className='info-box'>
+            <p className='product-name'>Product Name</p>
+            <p className='product-price'>$99.99</p>
+          </div>
+        </div>
+        <div className='scroll-item'>
+          <div className='image-box'></div>
+          <div className='info-box'>
+            <p className='product-name'>Product Name</p>
+            <p className='product-price'>$99.99</p>
+          </div>
+        </div>
+        <div className='scroll-item'>
+          <div className='image-box'></div>
+          <div className='info-box'>
+            <p className='product-name'>Product Name</p>
+            <p className='product-price'>$99.99</p>
+          </div>
+        </div>
+        <div className='scroll-item'>
+          <div className='image-box'></div>
+          <div className='info-box'>
+            <p className='product-name'>Product Name</p>
+            <p className='product-price'>$99.99</p>
+          </div>
+        </div>
       </div>
       <button className='scroll-button right' onClick={() => scroll('right')}>
         <FontAwesomeIcon className='scroll-button-icon' icon={faChevronRight} />

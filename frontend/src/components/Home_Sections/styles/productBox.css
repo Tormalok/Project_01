@@ -4,7 +4,7 @@
   width: 100%;
   position: relative;
   padding: 10px;
-  background-color: #b4e1cc;
+  background-color: #b4e1cc; /* Light green background */
 }
 
 .scroll-button {
@@ -48,13 +48,44 @@
 .scroll-item {
   min-width: 200px;
   height: 300px;
-  background-color: #e0f7ef;
+  background-color: #e0f7ef; /* Lighter shade of green */
   margin-right: 20px;
   flex-shrink: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   font-size: 24px;
   border-radius: 10px;
   box-sizing: border-box;
+  overflow: hidden;
+  border: 1px solid #b4e1cc; /* Slight border for distinction */
+}
+
+.image-box {
+  background-color: #98d6bb; /* Darker green for the image area */
+  width: 100%;
+  height: 70%;
+  border-bottom: 1px solid #b4e1cc; /* Border between image and info sections */
+}
+
+.info-box {
+  background-color: #e0f7ef; /* Lighter green for the info area */
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-name,
+.product-price {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.product-price {
+  color: #ff0000; /* Red color for the price */
+  font-weight: bold;
 }
