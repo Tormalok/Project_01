@@ -4,9 +4,10 @@ import NavBar from '../components/Globals/NavBar';
 import Banner from '../components/Home_Sections/Banner';
 import CategoriesBox from '../components/Home_Sections/CategoriesBox';
 import IntroBox from '../components/Home_Sections/IntroBox';
-import ProductBox_1 from '../components/Home_Sections/ProductBox_1';
-import ProductBox_2 from '../components/Home_Sections/ProductBox_1';
+import ProductBox1 from '../components/Home_Sections/ProductBox1';
+import ProductBox2 from '../components/Home_Sections/ProductBox2';
 import Footer from '../components/Globals/Footer';
+import BottomBar from '../components/Globals/BottomBar';
 import './styles/home.css';
 
 const Home = () => {
@@ -18,10 +19,11 @@ const Home = () => {
         <IntroBox />
         <CategoriesBox />
         <Banner />
-        <ProductBox_1 title='Featured Products' />
-        <ProductBox_2 title='New Arrivals' />
+        <ProductBox1 title='Featured Products' />
+        <ProductBox2 title='New Arrivals' />
       </div>
       <Footer />
+      <BottomBar />
     </div>
   );
 };

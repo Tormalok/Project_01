@@ -4,9 +4,9 @@ import {
   faChevronLeft,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
-import './styles/productBox_1.css';
+import './styles/productBox_2.css';
 
-const ProductBox = ({ title }) => {
+const ProductBox2 = ({ title }) => {
   const scrollContainerRef = useRef(null);
 
   const scroll = (direction) => {
@@ -144,4 +144,4 @@ const ProductBox = ({ title }) => {
   );
 };
 
-export default ProductBox;
+export default ProductBox2;
