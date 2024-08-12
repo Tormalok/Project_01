@@ -6,7 +6,7 @@
   position: relative;
   padding: 10px;
   margin-bottom: 50px;
-  background-color: #b4e1cc;
+  background-color: #e5b8bf;
   box-sizing: border-box;
 }
 
@@ -61,7 +61,7 @@
 .scroll-item {
   min-width: 200px;
   height: 300px;
-  background-color: #e0f7ef;
+  background-color: #f8e8eb;
   margin-right: 20px;
   flex-shrink: 0;
   display: flex;
@@ -72,18 +72,18 @@
   border-radius: 10px;
   box-sizing: border-box;
   overflow: hidden;
-  border: 1px solid #b4e1cc;
+  border: 1px solid #e5b8bf;
 }
 
 .image-box {
-  background-color: #98d6bb;
+  background-color: #cb929a;
   width: 100%;
   height: 70%;
-  border-bottom: 1px solid #b4e1cc;
+  border-bottom: 1px solid #e5b8bf;
 }
 
 .info-box {
-  background-color: #e0f7ef;
+  background-color: #f8e8eb;
   width: 100%;
   height: 30%;
   display: flex;
