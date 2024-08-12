@@ -18,7 +18,12 @@ const ProductBox = ({ title }) => {
   };
 
   return (
-    <div className={`scroll-container-wrapper ${title ? 'with-title' : ''}`}>
+    <div
+      className={`scroll-container-wrapper ${title ? 'with-title' : ''}`}
+      style={{
+        '--scroll-button-top': title ? 'calc(50% + 20px)' : '50%',
+      }}
+    >
       {title && <h2 className='scroll-title'>{title}</h2>}
       <button className='scroll-button left' onClick={() => scroll('left')}>
         <FontAwesomeIcon className='scroll-button-icon' icon={faChevronLeft} />

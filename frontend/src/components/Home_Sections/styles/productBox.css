@@ -34,8 +34,7 @@
   cursor: pointer;
   position: absolute;
   z-index: 2;
-  top: calc(50% + 20px);
-  /* top: 50%; */
+  top: var(--scroll-button-top);
 }
 
 .scroll-button.left {

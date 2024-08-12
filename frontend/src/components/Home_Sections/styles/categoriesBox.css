@@ -20,9 +20,11 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  border-top-right-radius: 10px;
 }
 
 .section-two .box .box-inner-top {
+  background-color: #ffd001;
   height: 60%;
   width: 100%;
   border-top-left-radius: 10px;
