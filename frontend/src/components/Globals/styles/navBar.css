@@ -93,6 +93,10 @@
   list-style: none;
 }
 
+.nav-link-container .login-link {
+  text-decoration: none;
+}
+
 .nav-link-container .nav-link {
   margin-left: 5px;
   color: #4a4a4a;

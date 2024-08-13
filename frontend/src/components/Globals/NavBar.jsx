@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faSearch,
@@ -48,10 +49,12 @@ const NavBar = () => {
       </div>
       <div className='gp-items-right'>
         <ul className='nav-link-container'>
-          <li className='nav-link'>
-            <FontAwesomeIcon icon={faUser} className='user-icon' />
-            <p>Sign in</p>
-          </li>
+          <Link to='/login' className='login-link'>
+            <li className='nav-link'>
+              <FontAwesomeIcon icon={faUser} className='user-icon' />
+              <p>Sign in</p>
+            </li>
+          </Link>
           <li
             className='nav-link'
             onClick={() => handleDropdownToggle('categories')}
