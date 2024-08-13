@@ -15,7 +15,7 @@ const Home = () => {
     <div className='home-container-main'>
       <RootBar />
       <NavBar />
-      <div className='container-inner'>
+      <div className='home-container-inner'>
         <IntroBox />
         <CategoriesBox />
         <Banner />
