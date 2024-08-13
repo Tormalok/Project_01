@@ -4,7 +4,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
-import './styles/productBox_2.css';
+import './styles/productBox2.css';
 
 const ProductBox2 = ({ title }) => {
   const scrollContainerRef = useRef(null);
@@ -19,7 +19,9 @@ const ProductBox2 = ({ title }) => {
 
   return (
     <div
-      className={`scroll-container-wrapper ${title ? 'with-title' : ''}`}
+      className={`scroll-container-wrapper-product-box-2 ${
+        title ? 'with-title' : ''
+      }`}
       style={{
         '--scroll-button-top': title ? 'calc(50% + 20px)' : '50%',
       }}
@@ -29,9 +31,9 @@ const ProductBox2 = ({ title }) => {
         <FontAwesomeIcon className='scroll-button-icon' icon={faChevronLeft} />
       </button>
       <div className='scroll-container' ref={scrollContainerRef}>
-        <div className='scroll-item'>
-          <div className='image-box'></div>
-          <div className='info-box'>
+        <div className='scroll-item-product-box-2'>
+          <div className='image-box-product-box-2'></div>
+          <div className='info-box-product-box-2'>
             <div className='product-name'>Product 1</div>
             <div className='product-price'>
               <span className='price-dollar-sign'>₵</span>
@@ -41,9 +43,9 @@ const ProductBox2 = ({ title }) => {
           </div>
         </div>
 
-        <div className='scroll-item'>
-          <div className='image-box'></div>
-          <div className='info-box'>
+        <div className='scroll-item-product-box-2'>
+          <div className='image-box-product-box-2'></div>
+          <div className='info-box-product-box-2'>
             <div className='product-name'>Product 2</div>
             <div className='product-price'>
               <span className='price-dollar-sign'>₵</span>
@@ -53,9 +55,9 @@ const ProductBox2 = ({ title }) => {
           </div>
         </div>
 
-        <div className='scroll-item'>
-          <div className='image-box'></div>
-          <div className='info-box'>
+        <div className='scroll-item-product-box-2'>
+          <div className='image-box-product-box-2'></div>
+          <div className='info-box-product-box-2'>
             <div className='product-name'>Product 3</div>
             <div className='product-price'>
               <span className='price-dollar-sign'>₵</span>
@@ -65,9 +67,9 @@ const ProductBox2 = ({ title }) => {
           </div>
         </div>
 
-        <div className='scroll-item'>
-          <div className='image-box'></div>
-          <div className='info-box'>
+        <div className='scroll-item-product-box-2'>
+          <div className='image-box-product-box-2'></div>
+          <div className='info-box-product-box-2'>
             <div className='product-name'>Product 4</div>
             <div className='product-price'>
               <span className='price-dollar-sign'>₵</span>
@@ -77,9 +79,9 @@ const ProductBox2 = ({ title }) => {
           </div>
         </div>
 
-        <div className='scroll-item'>
-          <div className='image-box'></div>
-          <div className='info-box'>
+        <div className='scroll-item-product-box-2'>
+          <div className='image-box-product-box-2'></div>
+          <div className='info-box-product-box-2'>
             <div className='product-name'>Product 5</div>
             <div className='product-price'>
               <span className='price-dollar-sign'>₵</span>
@@ -89,9 +91,9 @@ const ProductBox2 = ({ title }) => {
           </div>
         </div>
 
-        <div className='scroll-item'>
-          <div className='image-box'></div>
-          <div className='info-box'>
+        <div className='scroll-item-product-box-2'>
+          <div className='image-box-product-box-2'></div>
+          <div className='info-box-product-box-2'>
             <div className='product-name'>Product 6</div>
             <div className='product-price'>
               <span className='price-dollar-sign'>₵</span>
@@ -101,9 +103,9 @@ const ProductBox2 = ({ title }) => {
           </div>
         </div>
 
-        <div className='scroll-item'>
-          <div className='image-box'></div>
-          <div className='info-box'>
+        <div className='scroll-item-product-box-2'>
+          <div className='image-box-product-box-2'></div>
+          <div className='info-box-product-box-2'>
             <div className='product-name'>Product 7</div>
             <div className='product-price'>
               <span className='price-dollar-sign'>₵</span>
@@ -113,9 +115,9 @@ const ProductBox2 = ({ title }) => {
           </div>
         </div>
 
-        <div className='scroll-item'>
-          <div className='image-box'></div>
-          <div className='info-box'>
+        <div className='scroll-item-product-box-2'>
+          <div className='image-box-product-box-2'></div>
+          <div className='info-box-product-box-2'>
             <div className='product-name'>Product 8</div>
             <div className='product-price'>
               <span className='price-dollar-sign'>₵</span>
@@ -125,9 +127,9 @@ const ProductBox2 = ({ title }) => {
           </div>
         </div>
 
-        <div className='scroll-item'>
-          <div className='image-box'></div>
-          <div className='info-box'>
+        <div className='scroll-item-product-box-2'>
+          <div className='image-box-product-box-2'></div>
+          <div className='info-box-product-box-2'>
             <div className='product-name'>Product 9</div>
             <div className='product-price'>
               <span className='price-dollar-sign'>₵</span>
