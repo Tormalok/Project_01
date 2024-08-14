@@ -5,7 +5,7 @@ const RootBar = () => {
   return (
     <div className='root-bar'>
       <p>
-        <a href='#'>Arcvan Enterprise</a>
+        <a href='/'>Arcvan Enterprise</a>
       </p>
     </div>
   );
