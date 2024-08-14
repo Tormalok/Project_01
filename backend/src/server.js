@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import colors from 'colors';
 import userRoutes from './routes/userRoutes.js';
 import connectDB from './config/db.js';
@@ -14,6 +15,15 @@ const app = express();
 // Middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+// CORS configuration
+app.use(
+  cors({
+    origin: 'http://localhost:5173',
+    methods: 'GET,POST,PUT,DELETE',
+    credentials: true,
+  })
+);
 
 // Routes
 app.use('/api/users', userRoutes);
