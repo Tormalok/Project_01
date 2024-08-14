@@ -34,12 +34,32 @@ const Login = () => {
               Sign In
             </button>
 
-            <div className='alt'>
+            <div className='alt-one'>
               Don't have an account? <span>Sign up</span>
             </div>
 
-            <div className='account-option'></div>
-            <div className='account-option'></div>
+            <div className='alt-two'>
+              <p>or</p>
+            </div>
+
+            <a href='#' className='account-option-link'>
+              <div className='account-option'>
+                <div className='brand-logo-container'>
+                  <img src='/google-icon.svg' className='logo' />
+                </div>
+
+                <div className='brand-logo-action'>Continue with Google</div>
+              </div>
+            </a>
+
+            <a href='#' className='account-option-link'>
+              <div className='account-option'>
+                <div className='brand-logo-container'>
+                  <img src='/microsoft-icon.svg' className='logo' />{' '}
+                </div>
+                <div className='brand-logo-action'>Continue with Microsoft</div>
+              </div>
+            </a>
           </form>
         </div>
       </div>
