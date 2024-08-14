@@ -98,6 +98,11 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.form-box .account-option:hover {
+  background-color: #f0f2f4;
 }
 
 .form-box .alt-one {
@@ -112,6 +117,16 @@
 .form-box .alt-one {
   margin-top: 15px;
   margin-bottom: 30px;
+}
+
+.form-box .alt-one a {
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-box .alt-one a:hover {
+  text-decoration: underline;
 }
 
 .form-box .alt-one span {
@@ -135,6 +150,7 @@
 .account-option-link {
   color: #4a4a4a;
   text-decoration: none;
+  cursor: default;
 }
 
 .account-option .brand-logo-container,
