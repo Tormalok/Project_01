@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import RootBar from '../components/Globals/RootBar';
 import './styles/login.css';
 
 const Login = () => {
   const [isSignUp, setIsSignUp] = useState(false);
   const [signUpStep, setSignUpStep] = useState(1);
+  const navigate = useNavigate(); // Hook to handle navigation
 
   const toggleForm = (e) => {
     e.preventDefault();
@@ -12,12 +14,19 @@ const Login = () => {
     setSignUpStep(1); // Reset to first step when toggling forms
   };
 
+  const handleSignInSubmit = (e) => {
+    e.preventDefault();
+    // Simulate successful sign-in
+    navigate('/'); // Redirect to homepage
+  };
+
   const handleSignUpSubmit = (e) => {
     e.preventDefault();
     if (signUpStep === 1) {
       setSignUpStep(2);
     } else {
-      // Handle the final form submission here (e.g., send data to the server)
+      // Simulate successful sign-up and redirect to homepage
+      navigate('/');
     }
   };
 
@@ -31,7 +40,7 @@ const Login = () => {
           </div>
           <form
             className='login-form'
-            onSubmit={isSignUp ? handleSignUpSubmit : null}
+            onSubmit={isSignUp ? handleSignUpSubmit : handleSignInSubmit}
           >
             {isSignUp && signUpStep === 2 ? (
               <>
@@ -100,7 +109,10 @@ const Login = () => {
 
             {!isSignUp || signUpStep === 1 ? (
               <>
-                <a href='#' className='account-option-link'>
+                <a
+                  href='https://accounts.google.com/signin'
+                  className='account-option-link'
+                >
                   <div className='account-option'>
                     <div className='brand-logo-container'>
                       <img
@@ -115,7 +127,10 @@ const Login = () => {
                   </div>
                 </a>
 
-                <a href='#' className='account-option-link'>
+                <a
+                  href='https://login.microsoftonline.com/'
+                  className='account-option-link'
+                >
                   <div className='account-option'>
                     <div className='brand-logo-container'>
                       <img
