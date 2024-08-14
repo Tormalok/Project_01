@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 import RootBar from '../components/Globals/RootBar';
 import './styles/login.css';
 
@@ -14,19 +15,74 @@ const Login = () => {
     setSignUpStep(1); // Reset to first step when toggling forms
   };
 
-  const handleSignInSubmit = (e) => {
+  const handleSignInSubmit = async (e) => {
     e.preventDefault();
-    // Simulate successful sign-in
-    navigate('/'); // Redirect to homepage
+
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+
+    try {
+      // Send a POST request to the backend login API
+      const response = await axios.post(
+        'http://localhost:8000/api/users/login',
+        {
+          email,
+          password,
+        }
+      );
+
+      // Handle success response
+      console.log('Login successful:', response.data);
+
+      alert('User signed in');
+
+      // Redirect to the homepage after successful login
+      navigate('/');
+    } catch (error) {
+      // Handle error response
+      console.error(
+        'Error logging in:',
+        error.response?.data?.message || error.message
+      );
+      alert(
+        'Login failed: ' + (error.response?.data?.message || error.message)
+      );
+    }
   };
 
-  const handleSignUpSubmit = (e) => {
+  const handleSignUpSubmit = async (e) => {
     e.preventDefault();
-    if (signUpStep === 1) {
-      setSignUpStep(2);
-    } else {
-      // Simulate successful sign-up and redirect to homepage
+
+    const firstName = e.target.firstName.value;
+    const lastName = e.target.lastName.value;
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+
+    try {
+      // Send a POST request to the backend sign-up API
+      const response = await axios.post('http://localhost:8000/api/users', {
+        firstname: firstName,
+        lastname: lastName,
+        email,
+        password,
+      });
+
+      // Handle success response
+      console.log('Sign-up successful:', response.data);
+
+      alert('User created');
+
+      // Redirect to the homepage after successful sign-up
       navigate('/');
+    } catch (error) {
+      // Handle error response
+      console.error(
+        'Error signing up:',
+        error.response?.data?.message || error.message
+      );
+      alert(
+        'Sign-up failed: ' + (error.response?.data?.message || error.message)
+      );
     }
   };
 
@@ -62,8 +118,26 @@ const Login = () => {
                     required
                   />
                 </div>
+                <div className='form-group'>
+                  <input
+                    type='email'
+                    id='email'
+                    name='email'
+                    placeholder='Enter your email'
+                    required
+                  />
+                </div>
+                <div className='form-group'>
+                  <input
+                    type='password'
+                    id='password'
+                    name='password'
+                    placeholder='Enter your password'
+                    required
+                  />
+                </div>
                 <button type='submit' className='login-button'>
-                  Continue
+                  Sign Up
                 </button>
               </>
             ) : (
@@ -109,10 +183,7 @@ const Login = () => {
 
             {!isSignUp || signUpStep === 1 ? (
               <>
-                <a
-                  href='https://accounts.google.com/signin'
-                  className='account-option-link'
-                >
+                <a href='#' className='account-option-link'>
                   <div className='account-option'>
                     <div className='brand-logo-container'>
                       <img
@@ -127,10 +198,7 @@ const Login = () => {
                   </div>
                 </a>
 
-                <a
-                  href='https://login.microsoftonline.com/'
-                  className='account-option-link'
-                >
+                <a href='#' className='account-option-link'>
                   <div className='account-option'>
                     <div className='brand-logo-container'>
                       <img
