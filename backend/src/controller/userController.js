@@ -102,14 +102,16 @@ const loginUser = async (req, res) => {
 // @route POST '/api/users'
 // @access Public
 const createUser = async (req, res) => {
-  const { email, password } = req.body;
+  const { email, password, firstname, lastname } = req.body;
 
   try {
     // Fields validation
-    if (!email || !password) {
+    if (!email || !password || !firstname || !lastname) {
       return res
         .status(400)
-        .json({ message: 'Email and Password are required' });
+        .json({
+          message: 'Email, Password, Firstname, and Lastname are required',
+        });
     }
 
     // Checking if user exists in database
@@ -122,11 +124,18 @@ const createUser = async (req, res) => {
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, salt);
 
-    const user = new User({ email, password: hashedPassword });
+    // Create new user with additional fields
+    const user = new User({
+      email,
+      password: hashedPassword,
+      firstname,
+      lastname,
+    });
 
     // Saving user to database
     const createdUser = await user.save();
 
+    // Generate a token
     const token = jwt.sign(
       { userId: createdUser._id, email: createdUser.email },
       process.env.JWT_SECRET,
@@ -136,6 +145,8 @@ const createUser = async (req, res) => {
     return res.status(201).json({
       _id: createdUser._id,
       email: createdUser.email,
+      firstname: createdUser.firstname,
+      lastname: createdUser.lastname,
       message: 'User created',
       token,
     });
