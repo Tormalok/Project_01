@@ -45,6 +45,7 @@
   background-color: #f7f7f7;
   border-radius: 20px;
   overflow: hidden;
+  transition: border 0.2s ease-in-out;
 }
 
 .search-bar input {
@@ -59,6 +60,15 @@
   width: 100%;
   border: none;
   outline: none;
+}
+
+.search-bar input:focus {
+  border-color: #4a4a4a;
+  outline: none;
+}
+
+.search-bar:focus-within {
+  border-color: #4a4a4a;
 }
 
 .search-bar .search-icon-container {
