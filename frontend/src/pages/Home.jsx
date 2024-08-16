@@ -18,7 +18,7 @@ const Home = () => {
       <div className='home-container-inner'>
         <IntroBox />
         <CategoriesBox />
-        <Banner />
+        {/* <Banner /> */}
         <ProductBox1 title='Featured Products' />
         <ProductBox2 title='New Arrivals' />
       </div>
