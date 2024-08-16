@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .section-two {
   background-color: #fff5cb;
   width: 100%;
@@ -35,4 +37,12 @@
   background-color: #efc1e3;
   height: 40%;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.6em;
+  color: #1a1a1b;
 }
