@@ -25,7 +25,7 @@
 }
 
 .form-box {
-  width: 500px;
+  width: 450px;
   height: auto;
   background-color: #ffffff;
   padding: 30px 50px;
@@ -40,7 +40,7 @@
   font-weight: bold;
   font-style: normal;
   text-align: center;
-  color: #4a4a4a;
+  color: #0a0a0a;
 }
 
 .form-box .form-title {

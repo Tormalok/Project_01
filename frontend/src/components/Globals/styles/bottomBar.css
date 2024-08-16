@@ -18,3 +18,7 @@
   font-size: 0.8em;
   margin-bottom: 5px;
 }
+
+.bottom-bar-container p:last-child {
+  margin-bottom: 0;
+}

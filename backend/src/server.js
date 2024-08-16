@@ -8,7 +8,7 @@ import connectDB from './config/db.js';
 const port = process.env.PORT || 5000;
 
 // Connecting to database
-connectDB();
+// connectDB();
 
 const app = express();
 

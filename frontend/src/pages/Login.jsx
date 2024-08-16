@@ -48,7 +48,7 @@ const Login = () => {
       <div className='login-container-inner'>
         <div className='form-box'>
           <div className='form-title'>
-            <h1>Welcome back!</h1>
+            <h1>Welcome back</h1>
           </div>
           <form className='login-form' onSubmit={handleSignInSubmit}>
             <div className='form-group'>
